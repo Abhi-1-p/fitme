@@ -19,7 +19,7 @@
             font-size: 24px;
         }
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 20px auto;
             background: white;
             padding: 20px;
@@ -38,14 +38,80 @@
         button:hover {
             background-color: #218838;
         }
+        .hero {
+            background-image: url('https://source.unsplash.com/1600x900/?fitness'); /* Replace with your hero image path */
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            border-radius: 10px;
+            position: relative;
+            color: white;
+        }
+        .hero h1 {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .feature {
+            background: linear-gradient(135deg, #4caf50, #2196f3);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+        }
+        .feature img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .feature h3 {
+            margin: 0;
+        }
     </style>
 </head>
 <body>
     <header>Welcome to FitMe</header>
     <div class="container">
+        <div class="hero">
+            <h1>Your Fitness Journey Starts Here</h1>
+        </div>
         <h2>Your Personal Fitness Tracker</h2>
-        <p>FitMe helps you track your fitness activity using data from your fitness tracker. Monitor your workouts, meals, and progress to achieve your fitness goals.</p>
+        <p>FitMe helps you track your fitness activity using data from your fitness tracker. Monitor your workouts, meals, and progress to achieve your fitness goals effectively.</p>
+        
+        <div class="features">
+            <div class="feature">
+                <img src="https://source.unsplash.com/50x50/?running" alt="Step Count Icon">
+                <h3>Step Count</h3>
+                <p>Track your daily steps and stay motivated to reach your goals.</p>
+            </div>
+            <div class="feature">
+                <img src="https://source.unsplash.com/50x50/?calories" alt="Calories Burned Icon">
+                <h3>Calories Burned</h3>
+                <p>Monitor the calories you burn during workouts and daily activities.</p>
+            </div>
+            <div class="feature">
+                <img src="https://source.unsplash.com/50x50/?heart-rate" alt="Heart Rate Icon">
+                <h3>Heart Rate</h3>
+                <p>Keep an eye on your heart rate to ensure you're in the right zone.</p>
+            </div>
+            <div class="feature">
+                <img src="https://source.unsplash.com/50x50/?progress" alt="Workout Progress Icon">
+                <h3>Workout Progress</h3>
+                <p>Track your workout progress and see how far you've come.</p>
+            </div>
+        </div>
+        
         <button>Get Started</button>
     </div>
 </body>
-</html>
+</html
